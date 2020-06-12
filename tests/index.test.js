@@ -4,13 +4,13 @@ const expect = require('chai').expect
 const strictEqual = require('../index')
 
 describe('index', () => {
-  describe('strictEqual', () => {
-    it('returns the sum of the numbers in the array provided', () => {
-      const nums = [1, 2, 3, 'c']
+    describe('strictEqual', () => {
+        it('returns the boolean result in the array provided', () => {
+            const input = [1, 2, 3, 'c']
 
-      const total = strictEqual('c', 'c')
+            let result = strictEqual(input[4], input['c'])
 
-      expect(total).to.equal(true)
+            expect(result).to.equal(false)
+        })
     })
-  })
 })
