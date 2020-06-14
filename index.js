@@ -1,9 +1,9 @@
-function strictEqual(num1, num2) {
-    // eslint-disable-next-line no-cond-assign
+function strictEqual(firstValue, secondValue) {
     // eslint-disable-next-line eqeqeq
-    if (num1 == num2 && typeof(num1) == typeof(num2)) {
+    if (firstValue == secondValue && typeof(firstValue) == typeof(secondValue)) {
+        return true
+    } else {
         return false
     }
 }
-
 module.exports = strictEqual

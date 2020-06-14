@@ -6,9 +6,9 @@ const strictEqual = require('../index')
 describe('index', () => {
     describe('strictEqual', () => {
         it('returns the boolean result in the array provided', () => {
-            const input = [1, 2, 3, 'c']
+            const input = [1, 2, 3, 7, '5', '7']
 
-            let result = strictEqual(input[4], input['c'])
+            let result = strictEqual(input[3], input[5])
 
             expect(result).to.equal(false)
         })
